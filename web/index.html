@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101012">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Не прерывай огонь. Каждый учебный день имеет значение.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Серийчек">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon.svg">
+  <title>Универ Серийчек</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Универ Серийчек">
+        <span class="brand-mark">🔥</span>
+        <span class="brand-copy"><b>УНИВЕР</b><small>СЕРИЙЧЕК</small></span>
+      </a>
+      <div class="top-actions">
+        <span class="sync-indicator" id="sync-indicator"><i></i><span>НА УСТРОЙСТВЕ</span></span>
+        <button class="avatar-button" id="profile-shortcut" aria-label="Профиль">U</button>
+      </div>
+    </header>
+
+    <main id="app" aria-live="polite">
+      <section class="loading-state"><span class="loader"></span><p>Разжигаем огонь...</p></section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Основная навигация">
+      <button class="nav-item active" data-tab="home"><span class="nav-icon">⌂</span><span>Главная</span></button>
+      <button class="nav-item" data-tab="calendar"><span class="nav-icon">▦</span><span>Календарь</span></button>
+      <button class="nav-item" data-tab="stats"><span class="nav-icon">↗</span><span>Статистика</span></button>
+      <button class="nav-item" data-tab="profile"><span class="nav-icon">◉</span><span>Профиль</span></button>
+    </nav>
+  </div>
+
+  <div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
