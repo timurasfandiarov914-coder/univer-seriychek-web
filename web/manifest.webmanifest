@@ -1,0 +1,22 @@
+{
+  "id": "./",
+  "name": "Универ Серийчек",
+  "short_name": "Серийчек",
+  "description": "Не прерывай огонь. Каждый учебный день имеет значение.",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#101012",
+  "theme_color": "#101012",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
